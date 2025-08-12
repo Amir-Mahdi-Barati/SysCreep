@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 🕷️ SysCreep — Cross-Platform Reconnaissance Framework
 --------------------------------------------------------------------------------
-Role: Lead Developer & Security Engineer  
+
 Version: 1.0.0  
 License: MIT  
 Platforms: Windows 10/11 (Full Support), Linux (Partial Support)  
@@ -27,7 +27,6 @@ execution modes, and a rich set of modules for passive data extraction.
 ✔ Full system profiling — OS, CPU, RAM, disk, user, uptime  
 ✔ Network intelligence — IP, MAC, active connections, Wi-Fi credentials  
 ✔ Process monitoring — running processes, memory usage  
-✔ Browser forensics — history, cookies (Chrome/Edge)  
 ✔ Clipboard dump — extract current clipboard content  
 ✔ Screenshot capture — silent screen grab  
 ✔ Optional keylogger — logs keystrokes (disabled by default)  
@@ -46,8 +45,6 @@ execution modes, and a rich set of modules for passive data extraction.
 | wifi_info.py       | Extract saved SSIDs and passwords (netsh)    | Windows    |
 | disk_info.py       | Disk partitions, usage, file system types    | Win/Linux  |
 | process_info.py    | Running processes, PID, memory usage         | Win/Linux  |
-| browser_info.py    | Chrome/Edge history and cookies              | Windows    |
-| clipboard_info.py  | Current clipboard content                    | Windows    |
 | screenshot.py      | Capture screen using pyautogui               | Win/Linux  |
 | keylogger.py       | Log keystrokes (requires admin)              | Windows    |
 
@@ -77,32 +74,7 @@ SysCreep supports multiple modes of operation:
 
 ✔ Windows 10 / 11 — Full support  
 ✔ Linux (Debian/Ubuntu) — Partial support (some modules disabled)  
-✔ macOS — Not officially supported
 
-Note: Modules like `wifi_info`, `clipboard_info`, and `keylogger` rely on
-Windows-specific APIs and will not function on Linux.
-
---------------------------------------------------------------------------------
-📦 Installation
---------------------------------------------------------------------------------
-
-1. Clone the repository:
-
-    git clone https://github.com/Amir-Mahdi-Barati/SysCreep.git
-
-2. Navigate to the code directory:
-
-    cd SysCreep/SysCreep-Code
-
-3. Install dependencies:
-
-    pip install -r requirements.txt
-
-4. Run the tool:
-
-    python SysCreep.py
-
-You will be prompted to select a mode and modules to execute.
 
 --------------------------------------------------------------------------------
 🛠️ Technical Stack
@@ -130,32 +102,13 @@ SysCreep is a dual-use tool intended for:
 
 ✔ Ethical hacking  
 ✔ Cybersecurity education  
-✔ Digital forensics  
 ✔ Malware analysis (in sandboxed environments)
 
 ⚠️ Unauthorized use on systems without consent is illegal and unethical.  
-⚠️ The author is not responsible for misuse or damage caused by this tool.
+⚠️ The Developer is not responsible for misuse or damage caused by this tool.
 
 Use responsibly. Always obtain explicit permission before deploying SysCreep.
 
---------------------------------------------------------------------------------
-🧪 Development & Testing
---------------------------------------------------------------------------------
-
-To add a new module:
-
-1. Create a new Python file in `modules/`
-2. Define a `run()` function
-3. Import the module in `SysCreep.py`
-4. Add it to the module registry
-
-To test a module independently:
-
-    python modules/system_info.py
-
-To enable keylogger (for authorized testing only):
-
-    Enable `keylogger.py` in the module registry and run with admin privileges.
 
 --------------------------------------------------------------------------------
 📄 License — MIT
@@ -176,9 +129,7 @@ Full license available in LICENSE file.
 --------------------------------------------------------------------------------
 
 Amir Mahdi Barati  
-Role: Lead Developer, Security Engineer  
 GitHub: https://github.com/Amir-Mahdi-Barati  
-Email: [your-email-here] (optional)
 
 --------------------------------------------------------------------------------
 🧠 Use Cases
