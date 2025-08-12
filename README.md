@@ -42,11 +42,10 @@ execution modes, and a rich set of modules for passive data extraction.
 |--------------------|----------------------------------------------|------------|
 | system_info.py     | OS, CPU, RAM, user, uptime                   | Win/Linux  |
 | network_info.py    | IP, MAC, hostname, active connections        | Win/Linux  |
-| wifi_info.py       | Extract saved SSIDs and passwords (netsh)    | Windows    |
 | disk_info.py       | Disk partitions, usage, file system types    | Win/Linux  |
 | process_info.py    | Running processes, PID, memory usage         | Win/Linux  |
 | screenshot.py      | Capture screen using pyautogui               | Win/Linux  |
-| keylogger.py       | Log keystrokes (requires admin)              | Windows    |
+| keylogger.py       | Log keystrokes (requires admin)              | Win/Linux  |
 
 All modules implement a `run()` function and can be executed independently.
 
@@ -73,7 +72,7 @@ SysCreep supports multiple modes of operation:
 --------------------------------------------------------------------------------
 
 ✔ Windows 10 / 11 — Full support  
-✔ Linux (Debian/Ubuntu) — Partial support (some modules disabled)  
+✔ Linux (Debian/Ubuntu) — Partial support 
 
 
 --------------------------------------------------------------------------------
